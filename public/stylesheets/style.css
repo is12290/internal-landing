@@ -257,9 +257,13 @@ h6 {
 
 #intro .intro-info h2 {
   color: #41658A;
-  margin-bottom: 40px;
-  font-size: 48px;
-  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#intro .intro-info p {
+  color: #41658a
 }
 
 #intro .intro-info h2 span {
@@ -421,7 +425,7 @@ h6 {
   display: block;
   position: relative;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-weight: 500;
 }
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/head %>
+  <% include partials/headScript %>
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <% include partials/menu %>
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last"
+        style="display: flex; flex-direction: column; justify-content: center;">
+          <h2>Subscription <span>Successful!</span></h2>
+            <p>Now it's time to sync your subscription with your Slack account so the bot can get acclimated to your new status!</p>
+          <div>
+            <a href="#sync" class="btn-get-started scrollto">Learn How</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="images/success.png" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <main id="main">
+        <!--==========================
+          Mission Section
+        ============================-->
+        <section id="sync">
+          <div class="container">
+    
+            <header class="section-header" style="text-align: left; padding-top: 5%;"">
+              <h3>Sync Subscription</h3>
+              <ol>
+                <li>Record, or simply remember, the email you used for your subscription - this is important for the Internal bot to double check your subscription status</li>
+                <li>Go to your desired Slack workspace and enter into direct messages with the Internal bot. In the instance that the bot is not yet in your workspace, <a href="/#pricing" target="_blank">click here</a> to install it via free employee install. In the instance that the bot is already installed, but you have yet to open a dialouge with it, click "Apps" at the bottom left of your Slack window and search "Internal", then "View"</li>
+                <li>Once in direct messages with Internal, send the bot a message saying "New Manager". In the instance that you have yet to talk to the bot, it will ask you a few questions to get to know you better, then ask for your command again. If this happens, at the end of the introductory conversation just say "New Manager" again. If there is no introductory conversation needed, the bot will simply ask to verify the email you used for the subscription and will promptly change your status in its memory from "employee" to "manager" - providing access to managerial features</li>
+                <li>Ask the bot for 'Help' and start looking through all of the potential insights!</li>
+              </ol>
+              <p style="text-align: center;">Need some help? <a href="mailto:support@getinternal.co">support@getinternal.co</a></p>
+            </header>
+    
+          </div>
+        </section><!-- #clients -->
+        </main>
+</main>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
+
+<!-- JavaScript Libraries -->
+<% include partials/footScript %>
+<% include partials/footer %>
+
+</body>
+
+</html>
