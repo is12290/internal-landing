@@ -285,8 +285,8 @@
 
 
     <!--==========================
-                    Pricing Section
-                  ============================-->
+                                  Pricing Section
+                                ============================-->
     <section id="pricing" class="section-bg">
 
       <div class="container">
@@ -317,8 +317,10 @@
                   <li class="list-group-item">- Historic Score Searching</li>
                   <li class="list-group-item">- Permission-Based Coworker Score Sharing</li>
                 </ul>
-                <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
-                    alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
+                <a
+                  href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
+                    alt="Add to Slack" height="40" width="139"
+                    src="https://platform.slack-edge.com/img/add_to_slack.png"
                     srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
               </div>
             </div>
@@ -343,12 +345,13 @@
                 </ul>
                 <!-- <a href="/sike" class="btn">Subscribe</a> -->
 
-                <!-- Stripe Checkout -->
+                <!-- Load Stripe.js on your website. -->
                 <script src="https://js.stripe.com/v3"></script>
 
-                <a class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" href="checkout-button-plan_FcvbfxC85QzmQs" role="link">
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" role="link">
                   Subscribe
-                </a>
+                </button>
 
                 <div id="error-message"></div>
 
@@ -357,15 +360,23 @@
 
                   var checkoutButton = document.getElementById('checkout-button-plan_FcvbfxC85QzmQs');
                   checkoutButton.addEventListener('click', function () {
-
+                    // When the customer clicks on the button, redirect
+                    // them to Checkout.
                     stripe.redirectToCheckout({
                       items: [{ plan: 'plan_FcvbfxC85QzmQs', quantity: 1 }],
 
-                      successUrl: '/success-checkout',
-                      cancelUrl: '/error-checkout',
+                      // Do not rely on the redirect to the successUrl for fulfilling
+                      // purchases, customers may not always reach the success_url after
+                      // a successful payment.
+                      // Instead use one of the strategies described in
+                      // https://stripe.com/docs/payments/checkout/fulfillment
+                      successUrl: 'https://getinternal.co/success-checkout',
+                      cancelUrl: 'https://getinternal.co/error-checkout',
                     })
                       .then(function (result) {
                         if (result.error) {
+                          // If `redirectToCheckout` fails due to a browser or network
+                          // error, display the localized error message to your customer.
                           var displayError = document.getElementById('error-message');
                           displayError.textContent = result.error.message;
                         }
@@ -381,8 +392,8 @@
     </section><!-- #pricing -->
 
     <!--==========================
-                                Frequently Asked Questions Section
-                              ============================-->
+                                              Frequently Asked Questions Section
+                                            ============================-->
     <section id="faq">
       <div class="container">
         <header class="section-header">
