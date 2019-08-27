@@ -203,8 +203,8 @@
     </section><!-- #services -->
 
     <!--==========================
-      Call To Action Section
-    ============================-->
+                Call To Action Section
+              ============================-->
     <section id="call-to-action">
       <div class="container">
         <div class="row">
@@ -215,7 +215,7 @@
               think!</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot"><img
+            <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
                 alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
                 srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
           </div>
@@ -225,8 +225,8 @@
     </section><!-- #call-to-action -->
 
     <!--==========================
-      Features Section
-    ============================-->
+                Features Section
+              ============================-->
     <section id="features">
       <div class="container">
 
@@ -238,8 +238,8 @@
             <h4>Employees check in for the sake of their team and reflect for the sake of themselves
             </h4>
             <!-- <p>
-                          Life often seems like one big blur - one second you're coloring shapes in elementary school and the next you're paying bills. It's hard to keep track of things, especially things that easily skew your perception. For instance, did you have a good month last month, or did you end the month with 3 overpoweringly happy days that made you forget about how sad you were the rest of the time?
-                        </p> -->
+                                    Life often seems like one big blur - one second you're coloring shapes in elementary school and the next you're paying bills. It's hard to keep track of things, especially things that easily skew your perception. For instance, did you have a good month last month, or did you end the month with 3 overpoweringly happy days that made you forget about how sad you were the rest of the time?
+                                  </p> -->
             <p>
               Internal sends users twice-daily check ups with slightly different queries for each. The first check up is
               carried out
@@ -317,9 +317,8 @@
                   <li class="list-group-item">- Historic Score Searching</li>
                   <li class="list-group-item">- Permission-Based Coworker Score Sharing</li>
                 </ul>
-                <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot"><img
-                    alt="Add to Slack" height="40" width="139"
-                    src="https://platform.slack-edge.com/img/add_to_slack.png"
+                <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
+                    alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
                     srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
               </div>
             </div>
@@ -342,9 +341,9 @@
                   <li class="list-group-item">- Historic Team Score Searching</li>
                   <li class="list-group-item">- Channel-Specific Team Reporting</li>
                 </ul>
-                <a href="/sike" class="btn">Subscribe</a>
+                <!-- <a href="/sike" class="btn">Subscribe</a> -->
 
-                <!-- <button class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" role="link">
+                <button class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" role="link">
                   Subscribe
                 </button>
 
@@ -359,8 +358,8 @@
                     stripe.redirectToCheckout({
                       items: [{ plan: 'plan_FcvbfxC85QzmQs', quantity: 1 }],
 
-                      successUrl: '/success',
-                      cancelUrl: '/canceled',
+                      successUrl: '/success-checkout',
+                      cancelUrl: '/error-checkout',
                     })
                       .then(function (result) {
                         if (result.error) {
@@ -368,7 +367,7 @@
                           displayError.textContent = result.error.message;
                         }
                       });
-                  }); -->
+                  });
                 </script>
               </div>
             </div>
@@ -469,9 +468,6 @@
 
   </main>
 
-  <!--==========================
-    Footer
-  ============================-->
   <!--==========================
     Footer
   ============================-->
