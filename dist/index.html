@@ -343,9 +343,12 @@
                 </ul>
                 <!-- <a href="/sike" class="btn">Subscribe</a> -->
 
-                <button class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" role="link">
+                <!-- Stripe Checkout -->
+                <script src="https://js.stripe.com/v3"></script>
+
+                <a class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" href="checkout-button-plan_FcvbfxC85QzmQs" role="link">
                   Subscribe
-                </button>
+                </a>
 
                 <div id="error-message"></div>
 
@@ -608,9 +611,6 @@
 
   <!-- Template Main Javascript File -->
   <script src="public/javascripts/main.js"></script>
-
-  <!-- Stripe Checkout -->
-  <script src="https://js.stripe.com/v3"></script>
 
 </body>
 
