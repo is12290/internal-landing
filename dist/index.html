@@ -227,7 +227,7 @@
           </div>
           <div class="col-lg-5 cta-form-container">
             
-              <form action="/" name="newsletter" method="POST" data-netlify="true" role="form" class="contactForm" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
+              <form action="/" name="newsletter" method="POST" data-netlify="true" role="form" class="contactForm" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
                 <div style="display: inline-block">
                   <input type="email" style="width: 100%;" class="form-control" name="email" id="email" placeholder="Email"
                     data-rule="email" data-msg="Please enter a valid email" />
@@ -372,8 +372,7 @@
                 <div id="error-message"></div>
 
                 <script>
-                  require('dotenv').config();
-                  var stripe = Stripe(process.env.STRIPE_KEY);
+                  var stripe = require('stripe')(process.env.STRIPE_KEY);
 
                   var checkoutButton = document.getElementById('checkout-button-plan_FcvbfxC85QzmQs');
                   checkoutButton.addEventListener('click', function () {
