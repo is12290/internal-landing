@@ -98,7 +98,7 @@
           <p>Catalyze healthy culture by tracking your own emotional health and gaining insights to how your
             coworkers are doing</p>
           <div>
-            <a href="#about" class="btn-get-started scrollto">Learn More</a>
+            <a href="#pricing" class="btn-get-started scrollto">Install Free</a>
           </div>
         </div>
 
@@ -112,20 +112,33 @@
 
   <main id="main">
     <!--==========================
-      Mission Section
+      About Us Section
     ============================-->
     <section id="about">
+
       <div class="container">
+        <div class="row">
 
-        <header class="section-header" style="text-align: center;">
-          <h3>About Us</h3>
-          <h4>Internal facilitates the communication necessary for supremely healthy digital culture, while providing a
-            means for individuals to track their emotional fitness and a finger on the pulse of team sentiment for
-            managers</h4>
-        </header>
+          <div class="col-lg-5 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+              <img src="public/images/slack_graphic.png" style="max-width: 100%; height: auto;" alt="">
+          </div>
 
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <h3>An emotional insight facilitator for the world of bits</h3>
+              <p>Internal facilitates the communication necessary for supremely healthy digital culture, while providing a
+                means for individuals to track their well-being and a finger on the pulse of team sentiment for
+                managers</p>
+              <p>Everything is accomplished over Slack, so that remote team members know when it's best to approach coworkers or ask
+                for help. Communicating is hard - and even more difficult without being able to read body language - Internal aims to
+                fix this</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- #clients -->
+
+    </section><!-- #about -->
 
 
     <!--==========================
@@ -208,16 +221,22 @@
     <section id="call-to-action">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Install For Free!</h3>
-            <p class="cta-text">Only managers who want access to authentic, aggregate team emotional analytics need to
-              pay, so you're free to download Internal and try it out for yourself - be sure to let us know what you
-              think!</p>
+          <div class="col-lg-7 text-center text-lg-left">
+            <h3 class="cta-title">Stay Contected</h3>
+              <p class="cta-text">A newsletter for all of our coupon giving, product updating, and beta-testing pleasures</p>
           </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
-                alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
-                srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
+          <div class="col-lg-5 cta-form-container">
+            
+              <form action="/" name="newsletter" method="POST" data-netlify="true" role="form" class="contactForm" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
+                <div style="display: inline-block">
+                  <input type="email" style="width: 100%;" class="form-control" name="email" id="email" placeholder="Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                </div>
+                <div class="text-center"><button class="btn" style="background-color: #78C0E0; color: white;" type="submit" title="submit">Submit</button></div>
+                
+              </form>
+            
+            </form>
           </div>
         </div>
 
@@ -237,9 +256,6 @@
           <div class="col-lg-6 pt-5 pt-lg-0">
             <h4>Employees check in for the sake of their team and reflect for the sake of themselves
             </h4>
-            <!-- <p>
-                                    Life often seems like one big blur - one second you're coloring shapes in elementary school and the next you're paying bills. It's hard to keep track of things, especially things that easily skew your perception. For instance, did you have a good month last month, or did you end the month with 3 overpoweringly happy days that made you forget about how sad you were the rest of the time?
-                                  </p> -->
             <p>
               Internal sends users twice-daily check ups with slightly different queries for each. The first check up is
               carried out
@@ -285,8 +301,8 @@
 
 
     <!--==========================
-                                  Pricing Section
-                                ============================-->
+    Pricing Section
+    ============================-->
     <section id="pricing" class="section-bg">
 
       <div class="container">
@@ -349,7 +365,7 @@
                 <script src="https://js.stripe.com/v3"></script>
 
                 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                <button class="btn" id="checkout-button-plan_subscription" role="link">
+                <button class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" role="link">
                   Subscribe
                 </button>
 
@@ -359,7 +375,7 @@
                   require('dotenv').config();
                   var stripe = Stripe(process.env.STRIPE_KEY);
 
-                  var checkoutButton = document.getElementById('checkout-button-plan_subscription');
+                  var checkoutButton = document.getElementById('checkout-button-plan_FcvbfxC85QzmQs');
                   checkoutButton.addEventListener('click', function () {
                     // When the customer clicks on the button, redirect
                     // them to Checkout.
@@ -391,6 +407,27 @@
         </div>
       </div>
     </section><!-- #pricing -->
+
+    <!--==========================
+                Call To Action Section
+              ============================-->
+              <section id="call-to-action">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-9 text-center text-lg-left">
+                      <h3 class="cta-title">Add to Slack</h3>
+                        <p class="cta-text">The Internal Slack bot can be added to any Slack workspace free of charge, so give it a try
+                          risk-free! Be sure to let us know what you think and how it could be better suited to you</p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                      <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
+                          alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
+                          srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
+                    </div>
+                  </div>
+          
+                </div>
+              </section><!-- #call-to-action -->
 
     <!--==========================
                                               Frequently Asked Questions Section

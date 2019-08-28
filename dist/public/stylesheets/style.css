@@ -578,7 +578,6 @@ h6 {
 
 #about .about-img {
   position: relative;
-  margin: 30px 30px 30px 30px;
 }
 
 #about .about-img img {
@@ -597,8 +596,8 @@ h6 {
   position: absolute;
   left: -31px;
   top: -30px;
-  width: 90%;
-  height: 92%;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   content: '';
   background-color: #ebf1fa;
@@ -1496,6 +1495,24 @@ h6 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 991px) {
+  #call-to-action .cta-form-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
