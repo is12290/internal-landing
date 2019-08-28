@@ -365,22 +365,22 @@
                 <script src="https://js.stripe.com/v3"></script>
 
                 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                <button class="btn" id="checkout-button-plan_FcvbfxC85QzmQs" role="link">
+                <button class="btn" id="checkout-button-plan_FbviWXHMuC2FPC" role="link">
                   Subscribe
                 </button>
 
                 <div id="error-message"></div>
 
                 <script>
-                  var stripe = Stripe('{{ env("STRIPE_KEY") }}');
-
-                  var checkoutButton = document.getElementById('checkout-button-plan_FcvbfxC85QzmQs');
+                  var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
+                
+                  var checkoutButton = document.getElementById('checkout-button-plan_FbviWXHMuC2FPC');
                   checkoutButton.addEventListener('click', function () {
                     // When the customer clicks on the button, redirect
                     // them to Checkout.
                     stripe.redirectToCheckout({
-                      items: [{ plan: '{{ env("STRIPE_PLAN") }}', quantity: 1 }],
-
+                      items: [{plan: 'plan_FbviWXHMuC2FPC', quantity: 1}],
+                
                       // Do not rely on the redirect to the successUrl for fulfilling
                       // purchases, customers may not always reach the success_url after
                       // a successful payment.
@@ -389,14 +389,14 @@
                       successUrl: 'https://getinternal.co/success-checkout',
                       cancelUrl: 'https://getinternal.co/error-checkout',
                     })
-                      .then(function (result) {
-                        if (result.error) {
-                          // If `redirectToCheckout` fails due to a browser or network
-                          // error, display the localized error message to your customer.
-                          var displayError = document.getElementById('error-message');
-                          displayError.textContent = result.error.message;
-                        }
-                      });
+                    .then(function (result) {
+                      if (result.error) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, display the localized error message to your customer.
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                      }
+                    });
                   });
                 </script>
               </div>
