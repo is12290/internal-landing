@@ -8,16 +8,6 @@
         $(this).remove();
       });
     }
-    var modal = document.getElementById('bg-modal');
-    var modalBtn = document.getElementById('modal-btn');
-    var closeBtn = document.getElementById('modal-close');
-
-    modalBtn.addEventListener('click', openModal);
-
-    function openModal() {
-      console.log('1, 2 3');
-    }
-
   });
 
   // Back to top button
