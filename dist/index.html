@@ -372,7 +372,7 @@
                 <div id="error-message"></div>
 
                 <script>
-                  var stripe = Stripe(process.env.STRIPE_KEY);
+                  var stripe = Stripe('{{ env("STRIPE_KEY") }}');
 
                   var checkoutButton = document.getElementById('checkout-button-plan_FcvbfxC85QzmQs');
                   checkoutButton.addEventListener('click', function () {
