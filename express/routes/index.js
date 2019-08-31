@@ -30,6 +30,10 @@ router.get('/sike', function(req, res, next) {
   res.render('sike', { page: 'sike', menuId: 'sike' });
 });
 
+router.get('/form-submission', function(req, res, next) {
+  res.render('form-submission', { page: 'form-submission', menuId: 'form-submission' });
+});
+
 router.get('/whoops', function(req, res, next) {
   res.render('whoops', { page: 'whoops', menuId: 'whoops' });
 });
