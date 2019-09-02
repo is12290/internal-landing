@@ -282,13 +282,13 @@ h6 {
   border-radius: 8px;
   transition: 0.5s;
   color: #fff;
-  background: #2176ae;
+  background: #ed9062;
   color: #fff;
 }
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
-  background: #78C0E0;
+  background: #62BFED;
 }
 
 /*--------------------------------------------------------------
@@ -1119,7 +1119,7 @@ h6 {
   left: 0;
   width: 0%;
   height: 5px;
-  background-color: #78C0E0;
+  background-color: #ed9062;
   transition: 0.5s;
 }
 
@@ -1191,7 +1191,7 @@ h6 {
   letter-spacing: 1px;
   border-radius: 3px;
   display: inline-block;
-  background: #2176ae;
+  background: #ed9062;
   color: #fff;
 }
 
