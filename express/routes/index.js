@@ -38,5 +38,12 @@ router.get('/whoops', function(req, res, next) {
   res.render('whoops', { page: 'whoops', menuId: 'whoops' });
 });
 
+router.get('/blog', function(req, res, next) {
+  res.render('blog', { page: 'blog', menuId: 'blog' });
+});
+
+router.get('/schedule-demo', function(req, res, next) {
+  res.render('schedule-demo', { page: 'schedule-demo', menuId: 'schedule-demo' });
+});
 
 module.exports = router;
