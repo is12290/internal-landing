@@ -26,16 +26,12 @@ router.get('/error-checkout', function(req, res, next) {
   res.render('error-checkout', { page: 'error-checkout', menuId: 'error-checkout' });
 });
 
-router.get('/sike', function(req, res, next) {
-  res.render('sike', { page: 'sike', menuId: 'sike' });
+router.get('/form-submitted', function(req, res, next) {
+  res.render('form-submitted', { page: 'form-submitted', menuId: 'form-submitted' });
 });
 
-router.get('/form-submission', function(req, res, next) {
-  res.render('form-submission', { page: 'form-submission', menuId: 'form-submission' });
-});
-
-router.get('/whoops', function(req, res, next) {
-  res.render('whoops', { page: 'whoops', menuId: 'whoops' });
+router.get('/newsletter-success', function(req, res, next) {
+  res.render('newsletter-success', { page: 'newsletter-success', menuId: 'newsletter-success' });
 });
 
 router.get('/blog', function(req, res, next) {
