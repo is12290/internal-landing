@@ -117,12 +117,14 @@
   <script>
     (function() {
       var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
-      var seat_amount = +document.getElementById('seats_input').value;
+      var seat_amount = document.getElementById('seats_input').value;
+      console.log(typeof seat_amount);
+      var SEATS = parseInt(seat_amount);
     
       var checkoutButton = document.getElementById('checkout-button-plan_Fvozw3gIvWJ8gd');
       checkoutButton.addEventListener('click', function () {
         stripe.redirectToCheckout({
-          items: [{plan: 'plan_Fvozw3gIvWJ8gd', quantity: seat_amount}],
+          items: [{plan: 'plan_Fvozw3gIvWJ8gd', quantity: SEATS}],
           successUrl: 'https://getinternal.co/success',
           cancelUrl: 'https://getinternal.co/',
         })
