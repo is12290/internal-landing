@@ -56,7 +56,7 @@
 
   <script
     id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/af03f37d97804be1d8778f083/aa23d671fe4ce3313be96e1bc.js");</script>
-    <script src="https://js.stripe.com/v3"></script>
+  <script src="https://js.stripe.com/v3"></script>
 </head>
 
 <body>
@@ -98,8 +98,10 @@
           <h2><span>Subscribe</span> For<br>Continued Access</h2>
           <p>$5 per seat per month. Input your number of seats. Check out. Enjoy Internal for as long as you like!</p>
           <div style="display: flex; align-content: center;">
-            <input id="seats_input" type="text" placeholder="# of Seats" style="border: 1px solid #d9dde6; border: 0; padding: 6px 8px; width: 35%;">
-            <a id="checkout-button-plan_Fvozw3gIvWJ8gd" href="checkout-button-plan_Fvozw3gIvWJ8gd" class="btn-get-started scrollto">Subscribe</a>
+            <input id="seats_input" type="number" placeholder="# of Seats"
+              style="border: 1px solid #d9dde6; border: 0; padding: 6px 8px; width: 35%;">
+            <a id="checkout-button-plan_Fvozw3gIvWJ8gd" href="checkout-button-plan_Fvozw3gIvWJ8gd"
+              class="btn-get-started scrollto">Subscribe</a>
           </div>
         </div>
 
@@ -115,28 +117,27 @@
     STRIPE
   ============================-->
   <script>
-    (function() {
+    (function () {
       var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
-      var seat_amount = document.getElementById('seats_input').value;
-      console.log(typeof seat_amount);
-      var SEATS = parseInt(seat_amount);
-    
+
       var checkoutButton = document.getElementById('checkout-button-plan_Fvozw3gIvWJ8gd');
       checkoutButton.addEventListener('click', function () {
+        var seat_amount = document.getElementById('seats_input').value;
+        var SEATS = parseInt(seat_amount);
         stripe.redirectToCheckout({
-          items: [{plan: 'plan_Fvozw3gIvWJ8gd', quantity: SEATS}],
+          items: [{ plan: 'plan_Fvozw3gIvWJ8gd', quantity: SEATS }],
           successUrl: 'https://getinternal.co/success',
           cancelUrl: 'https://getinternal.co/',
         })
-        .then(function (result) {
-          if (result.error) {
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
       });
     })();
-    </script>
+  </script>
 
   <!--==========================
     Footer
@@ -282,4 +283,3 @@
 </body>
 
 </html>
-

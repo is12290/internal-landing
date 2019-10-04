@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="seats_input" type="number" placeholder="# of Seats" style="border: 1px solid #d9dde6; border: 0; padding: 6px 8px; width: 35%;">
+    <button id="testbutton">Subscribe</button>
+    <script>
+        var test_button = document.getElementById('testbutton');
+        test_button.addEventListener('click', function () {
+        var seat_amount = document.getElementById('seats_input').value;
+        seat_amount = parseInt(seat_amount);
+        console.log(typeof seat_amount);
+        })
+
+    </script>
+    </body>
+</html>
