@@ -126,7 +126,7 @@
         var SEATS = parseInt(seat_amount);
         stripe.redirectToCheckout({
           items: [{ plan: 'plan_Fvozw3gIvWJ8gd', quantity: SEATS }],
-          successUrl: 'https://getinternal.co/success',
+          successUrl: 'https://getinternal.co/success-checkout',
           cancelUrl: 'https://getinternal.co/',
         })
           .then(function (result) {

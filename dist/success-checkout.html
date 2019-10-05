@@ -91,13 +91,9 @@
         <div class="col-md-6 intro-info order-md-first order-last"
           style="display: flex; flex-direction: column; justify-content: center;" style="display: flex; flex-direction: column; justify-content: center;">
           <h2>Subscription <span>Successful!</span></h2>
-          <p>Now go play around with Internal in Slack and, as always, <a href="mailto:support@getinternal.co">let us know</a> if you have any questions or comments!</p>
+          <p>All that's left to do now is activate your subscription. As always, <a href="mailto:support@getinternal.co">let us know</a> if you have any questions or comments!</p>
           <div>
-            <a
-                  href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write" target="_blank"><img
-                    alt="Add to Slack" height="40" width="139"
-                    src="https://platform.slack-edge.com/img/add_to_slack.png"
-                    srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
+              <a href="#sync" class="btn-get-started scrollto">Activate</a>
           </div>
         </div>
 
@@ -109,39 +105,152 @@
     </div>
   </section>
 
-  <!-- <main id="main"> -->
+  <main id="main">
     <!--==========================
           Mission Section
         ============================-->
-    <!-- <section id="sync">
+    <section id="sync">
       <div class="container">
 
         <header class="section-header"
           style="text-align: left; padding-top: 5%;"">
-              <h3>Sync Subscription</h3>
+              <h3>Activate Subscription</h3>
               <ol>
-                <li>Record, or simply remember, the email you used for your subscription - this is important for the Internal bot to double check your subscription status</li>
-                <li>Go to your desired Slack workspace and enter into direct messages with the Internal bot. In the instance that the bot is not yet in your workspace, click the Add to Slack button above to install it. In the instance that the bot is
-          already installed, but you have yet to open a dialouge with it, click "Apps" at the bottom left of your Slack
-          window and search "Internal", then "View"</li>
-          <li>Once in direct messages with Internal, send the bot a message saying "New Manager". In the instance that
-            you have yet to talk to the bot, it will ask you a few questions to get to know you better, then ask for
-            your command again. If this happens, at the end of the introductory conversation just say "New Manager"
-            again. If there is no introductory conversation needed, the bot will simply ask to verify the email you used
-            for the subscription and will promptly change your status in its memory from "employee" to "manager" -
-            providing access to managerial features</li>
-          <li>Ask the bot for 'Help' and start looking through all of the potential insights!</li>
+                <li>Enter direct message channel with Internal on your Slack workspace</li>
+                <li>Send a message to Internal saying "Subscription Check"</li>
+                <li>Click "Activate Subscription"</li>
+                <li>Enter the email you used to purchase the subscription</li>
+                <li>That's it!</li>
           </ol>
           <p style="text-align: center;">Need some help? <a
               href="mailto:support@getinternal.co">support@getinternal.co</a></p>
         </header>
 
       </div>
-    </section> #clients 
-  </main> -->
+    </section>
+
+    <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+      <div class="footer-top">
+        <div class="container">
+  
+          <div class="row">
+  
+            <div class="col-lg-6">
+  
+              <div class="row">
+  
+                <div class="col-sm-6">
+  
+                  <div class="footer-info">
+                    <img src="public/images/small_logo.png" alt="" class="img-fluid">
+                    <p>Internal helps people be more empathetic. We help teams build a culture of transparency and
+                      acceptance.</p>
+                  </div>
+  
+                  <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and product beta testing. </p>
+                    <form action="/newsletter-success" name="Newsletter" method="POST" data-netlify="true">
+                      <input type="email" name="email" placeholder="Email"><input type="submit" value="Submit">
+                    </form>
+                  </div>
+  
+                </div>
+  
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="#benefits">Benefits</a></li>
+                      <li><a href="#features">Features</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                      <li><a href="/terms">Terms of Service</a></li>
+                      <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                      3455 Midvale Ave <br>
+                      Philadelphia, PA 19129<br>
+                      United States <br>
+                      <strong>Phone:</strong> +1 (610) 597-5353<br>
+                      <strong>Email:</strong> support@getinternal.co<br>
+                    </p>
+                  </div>
+  
+                  <div class="social-links">
+                    <a href="https://twitter.com/InternalHQ" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/InternalHQ/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/internal-psych" class="linkedin"><i
+                        class="fa fa-linkedin"></i></a>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6">
+  
+              <div class="form">
+  
+                <h4>Send us a message</h4>
+                <p>Contact us with your feedback and questions - We respond within 24 hours!</p>
+                <form action="/form-submitted" name="contact" method="POST" data-netlify="true" role="form"
+                  class="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                      data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                      data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                      data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+  
+                  <div id="sendmessage">Your message has been sent. Thank you!</div>
+                  <div id="errormessage"></div>
+  
+                  <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                </form>
+              </div>
+  
+            </div>
+  
+  
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Internal Inc</strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- #footer -->
+  </main>
 
   <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
   <!-- JavaScript Libraries -->
