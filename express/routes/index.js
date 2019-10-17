@@ -38,8 +38,8 @@ router.get('/blog', function(req, res, next) {
   res.render('blog', { page: 'blog', menuId: 'blog' });
 });
 
-router.get('/schedule-demo', function(req, res, next) {
-  res.render('schedule-demo', { page: 'schedule-demo', menuId: 'schedule-demo' });
+router.get('/free-install', function(req, res, next) {
+  res.render('free-install', { page: 'free-install', menuId: 'free-install' });
 });
 
 module.exports = router;
