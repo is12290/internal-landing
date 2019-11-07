@@ -1,337 +1,502 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zxx">
 
 <head>
-  <meta charset="utf-8">
-  <title>Internal</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="internal, emotion, emotional health, people analytics, HR, remote team" name="keywords">
-  <meta content="Internal allows you to monitor you and your team's well-being - Bringing human insights to digital relationships" name="description">
-  <meta property="og:image" content="public/images/intro-img.png">
-  <meta name="slack-app-id" content="AJ820D6K0">
-
-  <!-- Favicons -->
-  <link href="public/images/favicon.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
-    rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="public/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="public/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="public/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="public/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="public/stylesheets/style.css" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140493968-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-140493968-1');
-  </script>
-
-  <!-- Hotjar Tracking Code for www.getinternal.co -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 1345962, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-
-  <script
-    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/af03f37d97804be1d8778f083/aa23d671fe4ce3313be96e1bc.js");</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Internal | Blog</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3"></script>
 </head>
 
 <body>
-  <!--==========================
-  Header
-  ============================-->
-  <!--==========================
-  Header
-  ============================-->
-  <header id="header">
+    <!--::header part start::-->
+    <header class="main_menu single_page_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"></span>
+                        </button>
 
-    <div class="container">
-
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Internal</span></a></h1> -->
-        <a href="/" class="scrollto"><img src="public/images/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li><a href="/#about">About Us</a></li>
-          <li><a href="/#benefits">Benefits</a></li>
-          <li><a href="/#features">Features</a></li>
-          <li><a href="/#pricing">Pricing</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-          <li><a href="/#footer">Contact</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-
-    </div>
-  </header><!-- #header -->
-
-  <main id="main">
-
-    <!--==========================
-      Benefits Section
-    ============================-->
-    <section id="blog" class="section-bg clearfix">
-      <div class="container" style="margin-top: 5%">
-
-        <header class="section-header" style="text-align: center; margin-bottom: 4%">
-          <h1 style="color: #62BFED; font-weight: 700;">Blog</h1>
-          <h6 style="color: #41658A; font-weight: 500;">Tips, insights, and hacks to boost your fulfillment and productivity with remote work</h6>
-        </header>
-
-        <div class="row" style="display: flex; justify-content: center;">
-
-          <div class="col-md-4 col-lg-6" data-wow-duration="1.4s">
-            <div class="rect" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-flask-outline"
-                  style="color: #02d2ff;"></i></div>
-              <h4 class="title">Blog Post 1: Blog</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates officia labore architecto perferendis unde aperiam? Laborum facere sed sit
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-6" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="rect" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-analytics-outline"
-                  style="color: #02d2ff;"></i></div>
-              <h4 class="title">Blog Post 2: Return of the Blog</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates officia labore architecto perferendis unde aperiam? Laborum facere sed sit</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-6" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="rect" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-speedometer-outline"
-                  style="color:#02d2ff;"></i></div>
-              <h4 class="title">Blog Post 3: Blog's Revenge</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates officia labore architecto perferendis unde aperiam? Laborum facere sed sit
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-lg-6" data-wow-delay="0.2s" data-wow-duration="1.4s">
-            <div class="rect" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-bookmarks-outline"
-                  style="color: #02d2ff;"></i></div>
-              <h4 class="title">Blog Post 4: Blog Undead</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates officia labore architecto perferendis unde aperiam? Laborum facere sed sit
-                states</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-6" data-wow-delay="0.2s" data-wow-duration="1.4s">
-            <div class="rect" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-lightbulb-outline"
-                  style="color: #02d2ff;"></i></div>
-              <h4 class="title">Blog Post 5: Blog vs Blog</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates officia labore architecto perferendis unde aperiam? Laborum facere sed sit
-                tick</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-6" data-wow-duration="1.4s">
-            <div class="rect" style="cursor: pointer;" onclick="window.location='http://google.com';">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-color-filter-outline"
-                  style="color: #02d2ff;"></i></div>
-              <h4 class="title">Blog Post 6: Blog in Space</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates officia labore architecto perferendis unde aperiam? Laborum facere sed sit</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #services -->
-
-    <!--==========================
-                Call To Action Section
-              ============================-->
-    <section id="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 text-center text-lg-left">
-            <h3 class="cta-title">Stay Connected</h3>
-              <p class="cta-text">A no-nonsense newsletter where we share tips, insights, and money-saving coupons to help you (and your team) stay fulfilled and productive</p>
-          </div>
-          <div class="col-lg-5 cta-form-container">
-            
-              <form action="/form-submission" name="newsletter" method="POST" data-netlify="true" role="form" class="contactForm" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                <div style="display: inline-block">
-                  <input type="email" style="width: 100%;" class="form-control" name="email" id="email" placeholder="Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="checkout-button-plan_G7KaefuVLj9kqG" id="checkout-button-plan_G7KaefuVLj9kqG" class="d-none d-sm-block btn_1">Install</a>
+                    </nav>
                 </div>
-                <div class="text-center"><button class="btn" style="background-color: #ed9062; color: white;" type="submit" title="submit">Submit</button></div>
-                
-              </form>
-            
-            </form>
-          </div>
+            </div>
         </div>
+    </header>
+    <!--::Header part end::-->
 
-      </div>
-    </section><!-- #call-to-action -->
-
-  </main>
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer" class="section-bg">
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6">
-
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
             <div class="row">
-
-              <div class="col-sm-6">
-
-                <div class="footer-info">
-                  <img src="public/images/small_logo.png" alt="" class="img-fluid">
-                  <p>Internal is the emotional nervous system of organizations - A network of emotional tracking and
-                    sentiment intelligence tools, created to eradicate professional agony and promote innovation through
-                    empathy, transparency, and acceptance.</p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>our blog</h2>
+                            <h5>home <span></span> blog</h5>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="footer-newsletter">
-                  <h4>Newsletter</h4>
-                  <p>Subscribe to our newsletter for updates and product beta testing. </p>
-                  <form action="/form-submission" name="Newsletter" method="POST" data-netlify="true">
-                    <input type="email" name="email" placeholder="Email"><input type="submit" value="Submit">
-                  </form>
-                </div>
-
-              </div>
-
-              <div class="col-sm-6">
-                <div class="footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                  </ul>
-                </div>
-
-                <div class="footer-links">
-                  <h4>Contact Us</h4>
-                  <p>
-                    3455 Midvale Ave <br>
-                    Philadelphia, PA 19129<br>
-                    United States <br>
-                    <strong>Phone:</strong> +1 (610) 597-5353<br>
-                    <strong>Email:</strong> support@getinternal.co<br>
-                  </p>
-                </div>
-
-                <div class="social-links">
-                  <a href="https://twitter.com/InternalHQ" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="https://www.facebook.com/InternalHQ/" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.linkedin.com//company/internal-psych" class="linkedin"><i
-                      class="fa fa-linkedin"></i></a>
-                </div>
-
-              </div>
-
             </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="form">
-
-              <h4>Send us a message</h4>
-              <p>Contact us with your feedback and questions - We respond within 24 hours!</p>
-              <form action="/form-submission" name="contact" method="POST" data-netlify="true" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-              </form>
-            </div>
-
-          </div>
-
-
-
         </div>
+    </section>
+    <!-- breadcrumb start-->
 
-      </div>
-    </div>
+    <!--================Blog Area =================-->
+    <section class="blog_area section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/single_blog_1.png" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Internal Inc</strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- #footer -->
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
 
-  <a href="#header" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/single_blog_2.png" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
 
-  <a href="#header" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
 
-  <!-- JavaScript Libraries -->
-  <script src="public/lib/jquery/jquery.min.js"></script>
-  <script src="public/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="public/lib/easing/easing.min.js"></script>
-  <script src="public/lib/mobile-nav/mobile-nav.js"></script>
-  <script src="public/lib/wow/wow.min.js"></script>
-  <script src="public/lib/waypoints/waypoints.min.js"></script>
-  <script src="public/lib/counterup/counterup.min.js"></script>
-  <script src="public/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="public/lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="public/lib/lightbox/js/lightbox.min.js"></script>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/single_blog_3.png" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
 
-  <!-- Template Main Javascript File -->
-  <script src="public/javascripts/main.js"></script>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
 
-</body>
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/single_blog_4.png" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
 
-</html>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/single_blog_5.png" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <i class="ti-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Next">
+                                        <i class="ti-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <form action="#">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder='Search Keyword'
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Search Keyword'">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="button"><i class="ti-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1"
+                                    type="submit">Search</button>
+                            </form>
+                        </aside>
+
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Category</h4>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Resaurant food</p>
+                                        <p>(37)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Travel news</p>
+                                        <p>(10)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Modern technology</p>
+                                        <p>(03)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Product</p>
+                                        <p>(11)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Inspiration</p>
+                                        <p>21</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Health Care (21)</p>
+                                        <p>09</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+
+                        <aside class="single_sidebar_widget popular_post_widget">
+                            <h3 class="widget_title">Recent Post</h3>
+                            <div class="media post_item">
+                                <img src="img/post/post_1.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>From life was you fish...</h3>
+                                    </a>
+                                    <p>January 12, 2019</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/post/post_2.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>The Amazing Hubble</h3>
+                                    </a>
+                                    <p>02 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/post/post_3.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>Astronomy Or Astrology</h3>
+                                    </a>
+                                    <p>03 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/post/post_4.png" alt="post">
+                                <div class="media-body">
+                                    <a href="single-blog.html">
+                                        <h3>Asteroids telescope</h3>
+                                    </a>
+                                    <p>01 Hours ago</p>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="single_sidebar_widget tag_cloud_widget">
+                            <h4 class="widget_title">Tag Clouds</h4>
+                            <ul class="list">
+                                <li>
+                                    <a href="#">project</a>
+                                </li>
+                                <li>
+                                    <a href="#">love</a>
+                                </li>
+                                <li>
+                                    <a href="#">technology</a>
+                                </li>
+                                <li>
+                                    <a href="#">travel</a>
+                                </li>
+                                <li>
+                                    <a href="#">restaurant</a>
+                                </li>
+                                <li>
+                                    <a href="#">life style</a>
+                                </li>
+                                <li>
+                                    <a href="#">design</a>
+                                </li>
+                                <li>
+                                    <a href="#">illustration</a>
+                                </li>
+                            </ul>
+                        </aside>
+
+
+                        <aside class="single_sidebar_widget instagram_feeds">
+                            <h4 class="widget_title">Instagram Feeds</h4>
+                            <ul class="instagram_row flex-wrap">
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_5.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_6.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_7.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_8.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_9.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/post/post_10.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+
+
+                        <aside class="single_sidebar_widget newsletter_widget">
+                            <h4 class="widget_title">Newsletter</h4>
+
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1"
+                                    type="submit">Subscribe</button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+
+    <!--::footer_part start::-->
+    <footer class="footer_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-4 col-lg-4">
+                    <div class="single_footer_part">
+                        <a href="index.html" class="footer_logo_iner"> <img src="img/footer_logo.png" alt="#"> </a>
+                        <p>Internal builds bridges between humans by catalyzing and mediating difficult emotional conversations for important relationships.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="single_footer_part">
+                        <h4>Home</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Benefits</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="single_footer_part">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Data Processing Addendum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="single_footer_part">
+                        <h4>A Note to You</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="">You are whole independent of your work. You are on the right path. We love you whether you're a customer or not.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="copyright_text">
+                        <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright Internal Inc. &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <a href="https://colorlib.com" target="_blank"><i class="ti-heart" aria-hidden="true"></i></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer_icon social_icon">
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/InternalHQ" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--::footer_part end::-->
+    
+        <!-- jquery plugins here-->
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <!-- popper js -->
+        <script src="js/popper.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- easing js -->
+        <script src="js/jquery.magnific-popup.js"></script>
+        <!-- swiper js -->
+        <script src="js/swiper.min.js"></script>
+        <!-- swiper js -->
+        <script src="js/masonry.pkgd.js"></script>
+        <!-- particles js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <!-- slick js -->
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <!-- custom js -->
+        <script src="js/custom.js"></script>
+    </body>
+    
+    </html>

@@ -10,36 +10,32 @@ router.get('/privacy', function(req, res, next) {
   res.render('privacy', { page: 'privacy', menuId: 'privacy' });
 });
 
-router.get('/data-processing-addendum', function(req, res, next) {
-  res.render('data-processing-addendum', { page: 'data-processing-addendum', menuId: 'data-processing-addendum' });
+router.get('/data-processing', function(req, res, next) {
+  res.render('data-processing', { page: 'data-processing', menuId: 'data-processing' });
 });
 
 router.get('/terms', function(req, res, next) {
   res.render('terms', { page: 'terms', menuId: 'terms' });
 });
 
-router.get('/success-checkout', function(req, res, next) {
-  res.render('success-checkout', { page: 'success-checkout', menuId: 'success-checkout' });
+router.get('/success', function(req, res, next) {
+  res.render('success', { page: 'success', menuId: 'success' });
 });
 
-router.get('/error-checkout', function(req, res, next) {
-  res.render('error-checkout', { page: 'error-checkout', menuId: 'error-checkout' });
+router.get('/error', function(req, res, next) {
+  res.render('error', { page: 'error', menuId: 'error' });
 });
 
 router.get('/form-submitted', function(req, res, next) {
-  res.render('form-submitted', { page: 'form-submitted', menuId: 'form-submitted' });
+  res.render('contact-form', { page: 'contact-form', menuId: 'contact-form' });
 });
 
 router.get('/newsletter-success', function(req, res, next) {
-  res.render('newsletter-success', { page: 'newsletter-success', menuId: 'newsletter-success' });
+  res.render('newsletter-form', { page: 'newsletter-form', menuId: 'newsletter-form' });
 });
 
-router.get('/blog', function(req, res, next) {
-  res.render('blog', { page: 'blog', menuId: 'blog' });
-});
-
-router.get('/free-install', function(req, res, next) {
-  res.render('free-install', { page: 'free-install', menuId: 'free-install' });
+router.get('/manifesto', function(req, res, next) {
+  res.render('manifesto', { page: 'manifesto', menuId: 'manifesto' });
 });
 
 module.exports = router;

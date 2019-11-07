@@ -1,571 +1,488 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zxx">
 
 <head>
-  <meta charset="utf-8">
-  <title>Internal</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="internal, emotion, emotional health, people analytics, HR, remote team" name="keywords">
-  <meta
-    content="Internal allows you to monitor you and your team's well-being - Bringing human insights to digital relationships"
-    name="description">
-  <meta property="og:image" content="public/images/intro-img.png">
-  <meta name="slack-app-id" content="AJ820D6K0">
-
-  <!-- Favicons -->
-  <link href="public/images/favicon.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
-    rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="public/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="public/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="public/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="public/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="public/stylesheets/style.css" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140493968-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-140493968-1');
-  </script>
-
-  <!-- Hotjar Tracking Code for www.getinternal.co -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 1345962, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-
-  <script
-    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/af03f37d97804be1d8778f083/aa23d671fe4ce3313be96e1bc.js");</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Internal</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Google Lato Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3"></script>
 </head>
 
 <body>
-  
-  <!--==========================
-  Header
-  ============================-->
-  <header id="header">
+    <!--::Nav part start::-->
+    <header class="main_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand main_logo" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand single_page_logo" href="index.html"> <img src="img/footer_logo.png" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"></span>
+                        </button>
 
-    <div class="container">
-
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Internal</span></a></h1> -->
-        <a href="/" class="scrollto"><img src="public/images/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li><a href="/#about">About Us</a></li>
-          <li><a href="/#benefits">Benefits</a></li>
-          <li><a href="/#features">Features</a></li>
-          <li><a href="/#pricing">Pricing</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-          <li><a href="/#footer">Contact</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-
-    </div>
-  </header><!-- #header -->
-
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro" class="clearfix">
-    <div class="container d-flex h-100">
-      <div class="row justify-content-center align-self-center">
-        <div class="col-md-6 intro-info order-md-first order-last"
-          style="display: flex; flex-direction: column; justify-content: center;">
-          <h2><span>Monitor</span> <br>Relationship <span>Health</span></h2>
-          <p>Internal allows you to monitor the health of your co-founder relationship in Slack.</p>
-          <div>
-            <a href="#pricing" class="btn-get-started scrollto">Learn More</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 intro-img order-md-last order-first">
-          <img src="public/images/intro-img.png" alt="" class="img-fluid">
-        </div>
-      </div>
-
-    </div>
-  </section><!-- #intro -->
-
-  <main id="main">
-    <!--==========================
-                Features Section
-              ============================-->
-    <section id="features">
-      <div class="container">
-
-        <div class="row feature-item">
-          <div class="col-lg-6">
-            <img src="public/images/features-1.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-5 pt-lg-0">
-            <h4>You are building a company. You have co-founders.
-            </h4>
-            <p>
-              Internal provides you with insights about your relationship with your co-founders so that you can always be on the same page in order to most effectively build your startup.
-            </p>
-            <p>
-              Internal conveys the hard things to talk about, like how confindent in success you are and whether or not the work distribution is fair, in order to prevent co-founder burnout.
-            </p>
-          </div>
-        </div>
-
-        <div class="row feature-item mt-5 pt-5">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="public/images/features-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>The most important thing on your mind is getting to market.
-            </h4>
-            <p>
-              It's too easy to be so fuced on building your company that you forget to talk to your co-founders about the important things that your or they may be feeling. 
-            </p>
-            <p>
-              Mitigate the chances of emotional drifts between co-founders so that you can maximize your probability of success.
-            </p>
-            <p>
-              Get to market, dominate your niche, and build the next unicorn, all while preserving your most vital relationship.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #about -->
-
-    <!--==========================
-      Benefits Section
-    ============================-->
-    <section id="benefits" class="section-bg">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Benefits</h3>
-          <p>Relationship insurance to mitigate the chance of a breakup</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-md-6 col-lg-4" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #e1ffe7;"><i class="ion-ios-chatbubble-outline"
-                  style="color: #02ff57;"></i></div>
-              <h4 class="title">Communication</h4>
-              <p class="description">Actively know how your cofounders are feeling - break down the negative and uplift the positive.
-              </p>
+                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features">About</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/manifesto">Mission</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#FAQ">FAQ</a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="checkout-button-plan_G7KaefuVLj9kqG" id="checkout-button-plan_G7KaefuVLj9kqG" class="d-none d-sm-block btn_1 home_page_btn">Install</a>
+                    </nav>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #e6fdfb;"><i class="ion-ios-heart-outline"
-                  style="color: #02d2ff;"></i></div>
-              <h4 class="title">Recognition</h4>
-              <p class="description">Become aware of peaks and valleys in your relationship - discover what makes each other tick.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #e7e7fd;"><i class="ion-ios-briefcase-outline"
-                  style="color:#2a02ff;"></i></div>
-              <h4 class="title">Cohesion</h4>
-              <p class="description">Form stronger bonds and better dynamics by gaining insights that don't arise in day-to-day conversation.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-    </section><!-- #services -->
+    </header>
+    <!--::Nav part end::-->
 
-    <!--==========================
-                Call To Action Section
-              ============================-->
-              <section id="call-to-action">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-9 text-center text-lg-left">
-                        <h3 class="cta-title">Add to Slack</h3>
-                        <p class="cta-text">Start monitoring the health of your most important business relationship and add Internal to your Slack!<br><i>Have feedback for our team? We’d love to hear from you <a
-                              href="mailto:support@getinternal.co">support@getinternal.co</a></i></p>
-                      </div>
-                      <div class="col-lg-3 cta-btn-container text-center">
-                        <a href="https://slack.com/oauth/authorize?client_id=611368649089.620068448646&scope=bot,channels:write"><img
-                            alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
-                            srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
-                      </div>
+    <div id="error-message"></div>
+
+    <!--::Banner part start::-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-5">
+                    <div class="banner_img d-none d-lg-block">
+                        <img src="img/banner_img3.png" alt="">
                     </div>
-            
-                  </div>
-                </section><!-- #call-to-action -->
-
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5 col-md-6" style="display: flex; justify-content: center; align-items: center;">
-            <img src="public/images/slack_graphic.png" style="max-width: 100%; height: auto;" alt="">
-          </div>
-
-          <div class="col-lg-7 col-md-6">
-            <div class="about-content">
-              <h2>About Us</h2>
-              <h3>A tool for easily communicating how you're doing</h3>
-              <p>Internal lets you monitor how you and your co-founders are feeling so that you can have a clear gauge on the emotional health of your startup, allowing you to catch the previously unspoken feelings that can lead to co-founder breakups and burnout.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h1>Transparent Mood Tracking</h1>
+                            <p>Internal is a Slack application for keeping track of how you and your co-founders are feeling to make sure that you don't lose yourself while building the future.</p>
+                            <a href="#features" class="btn_2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <img src="img/animate_icon/Ellipse_7.png" alt="" class="feature_icon_1 custom-animation1">
+        <img src="img/animate_icon/Ellipse_8.png" alt="" class="feature_icon_2 custom-animation2">
+        <img src="img/animate_icon/Ellipse_1.png" alt="" class="feature_icon_3 custom-animation3">
+        <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_4 custom-animation4">
+        <img src="img/animate_icon/Ellipse_3.png" alt="" class="feature_icon_5 custom-animation5">
+        <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_6 custom-animation6">
+    </section>
+    <!--::Banner start::-->
 
-    </section><!-- #about -->
-
-    <!--==========================
-    Pricing Section
-    ============================-->
-    <section id="pricing" class="section-bg">
-
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Pricing</h3>
-          <p>One plan to strengthen co-founder relationships</p>
-        </header>
-
-        <div class="row justify-content-center">
-
-          <!-- Basic Plan  -->
-          <div class="col-xs-12 col-lg-4">
-            <div class="card" style="display: flex; justify-content: center;">
-              <div class="card-header">
-                <h3><span class="currency">$</span>32<span class="period">/month</span></h3>
-              </div>
-              <div class="card-block">
-                <h4 class="card-title">
-                  Slack App
-                </h4>
-                <ul class="list-group">
-                  <li class="list-group-item">- Daily Check Ins</li>
-                  <li class="list-group-item">- Daily Reflections</li>
-                  <li class="list-group-item">- Morning Emotion Scores</li>
-                  <li class="list-group-item">- Evening Relationship Insights</li>
-                  <li class="list-group-item">- Weekly and Monthly Reports</li>
-                </ul>
-                <button class="btn" id="checkout-button-plan_Fy0HMIQk0oy9F1">
-                  Subscribe
-                </button>
-              </div>
-                
+    <!--::Features 1 start::-->
+    <section class="about_us section_padding" id="features">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <img src="img/icon/Icon_1.png" alt="">
+                        <h2>You are building a company.
+                            You have co-founders.</h2>
+                        <p>Internal will notify your co-founders when you aren't feeling well so that your relationships can reach and maintain their most wholesome potential. Gone are the days of being anxious around starting about how you're feeling.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_img">
+                        <img src="img/features-1.png" alt="">
+                    </div>
+                </div>
             </div>
-          </div>
-
         </div>
-      </div>
-    </section><!-- #pricing -->
+        <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_1 custom-animation6">
+    </section>
+    <!--::Features 1 end::-->
 
-    <!--==========================
-    Stripe
-    ============================-->
+    <!--::Features 2 start::-->
+    <section class="about_us right_time">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_img">
+                        <img src="img/features-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <img src="img/icon/Icon_2.png" alt="">
+                        <h2>The most important thing on your mind is being a success.</h2>
+                        <p>Internal makes sure you spend the least amount of time wallowing in an unexpected negative emotion so that you can spend more time accomplishing your goals. Recognize and accept how you feel. Combat the negative and promote the positive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/animate_icon/Ellipse_5.png" alt="" class="feature_icon_2 custom-animation3">
+    </section>
+    <!--::Features 2 end::-->
+
+    <!--::Benefits start::-->
+    <section class="use_sasu padding_top" id="benefits">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <img src="img/icon/feature_icon_1.png" alt="">
+                            <h4>Communication</h4>
+                            <p>Actively know how you and your co-founders are feeling - break down the negative and uplift the positive. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <img src="img/icon/feature_icon_2.png" alt="">
+                            <h4>Recognition</h4>
+                            <p>Become aware of peaks and valleys in your relationship with yourself, your co-founders, and your project. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <img src="img/icon/feature_icon_3.png" alt="">
+                            <h4>Cohesion</h4>
+                            <p>Form stronger bonds through the discussions that arise from important emotions that otherwise wouldn't be brought up. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/animate_icon/Ellipse_1.png" alt="" class="feature_icon_1 custom-animation1">
+    </section>
+    <!--::Benefits end::-->
+
+    <!--::Pricing start::-->
+    <section class="pricing_part padding_top home_page_pricing" id="pricing">
+            <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_2 custom-animation3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_tittle text-center">
+                        <h2>Simple Pricing</h2>
+                        <p>One Plan. One Flat Rate. Regardless of Team Size.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_pricing_part">
+                        <img src="img/icon/pricing_icon_4.png" alt="">
+                        <p>Slack App</p>
+                        <h3>$20.00 <span>/ month</span></h3>
+                        <ul>
+                            <li>Daily Mood Tracking</li>
+                            <li>Team Mood Reports</li>
+                            <li>Personal Mood Reports</li>
+                            <li>Emotional Discussion Notifications</li>
+                        </ul>
+                        <a href="checkout-button-plan_G7KaefuVLj9kqG" id="checkout-button-plan_G7KaefuVLj9kqG" class="pricing_btn">Install</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_2 custom-animation1">
+    </section>
+    <!--::Pricing end::-->
+
     <script>
-      (function() {
-        var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
-      
-        var checkoutButton = document.getElementById('checkout-button-plan_Fy0HMIQk0oy9F1');
-        checkoutButton.addEventListener('click', function () {
-          // When the customer clicks on the button, redirect
-          // them to Checkout.
-          stripe.redirectToCheckout({
-            items: [{plan: 'plan_Fy0HMIQk0oy9F1', quantity: 1}],
-      
-            // Do not rely on the redirect to the successUrl for fulfilling
-            // purchases, customers may not always reach the success_url after
-            // a successful payment.
-            // Instead use one of the strategies described in
-            // https://stripe.com/docs/payments/checkout/fulfillment
-            successUrl: 'https://getinternal.co/success-checkout',
-            cancelUrl: 'https://getinternal.co',
-          })
-          .then(function (result) {
-            if (result.error) {
-              // If `redirectToCheckout` fails due to a browser or network
-              // error, display the localized error message to your customer.
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
+        (function() {
+          var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
+        
+          var checkoutButton = document.getElementById('checkout-button-plan_G7KaefuVLj9kqG');
+          checkoutButton.addEventListener('click', function () {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe.redirectToCheckout({
+              items: [{plan: 'plan_G7KaefuVLj9kqG', quantity: 1}],
+        
+              // Do not rely on the redirect to the successUrl for fulfilling
+              // purchases, customers may not always reach the success_url after
+              // a successful payment.
+              // Instead use one of the strategies described in
+              // https://stripe.com/docs/payments/checkout/fulfillment
+              successUrl: 'https://getinternal.co/success',
+              cancelUrl: 'https://getinternal.co/error',
+            })
+            .then(function (result) {
+              if (result.error) {
+                // If `redirectToCheckout` fails due to a browser or network
+                // error, display the localized error message to your customer.
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+              }
+            });
           });
-        });
-      })();
-      </script>
+        })();
+        </script>
 
-    <!--==========================
-    Call To Action Section
-    ============================-->
-    <section id="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 text-center text-lg-left">
-            <h3 class="cta-title">Schedule A Demo</h3>
-            <p class="cta-text">Commitments can sometimes be intimidating - schedule a demo to learn what Internal is all about!</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container ">
-            <a href="https://calendly.com/internal-demo/30min" target="_blank"><button class="cta-btn">Schedule Demo</button></a>
-          </div>
+    <!--::About Us start::-->
+    <section class="review_part padding_top" id="about">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-lg-6">
+                    <div class="review_img">
+                        <img src="img/about_us_img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="review_slider owl-carousel">
+                        <div class="review_part_text">
+                            <h2>Internal builds bridges between people</h2>
+                            <p>There are too many important projects cut short by avoidable disagreements, families parted due to reversible resentment, and lives lost because of loneliness. Internal's intent is to fix these avoidable problems by bringing emotional transparency to relationships in a way that feels right.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-          </div>
+        <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_2 custom-animation2">
+    </section>
+    <!--::About Us end::-->
+
+    <!--::CTA start::-->
+    <section class="subscribe_part padding_top">
+            <img src="img/animate_icon/Ellipse_9.png" alt="" class="feature_icon_1 custom-animation5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="subscribe_part_text text-center">
+                        <h2>Stay Up to Date</h2>
+                        <div class="subscribe_form">
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="subscribe_btn">
+                                            <div class="btn_2 d-block">Subscribe</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <img src="img/animate_icon/Ellipse_5.png" alt="" class="feature_icon_2 custom-animation2">
+    </section>
+    <!--::CTA end::-->
 
-      </div>
-    </section><!-- #call-to-action -->
-
-
-
-    <!--==========================
-    Frequently Asked Questions Section
-    ============================-->
-    <section id="faq">
-      <div class="container">
-        <header class="section-header">
-          <h3>Frequently Asked Questions</h3>
-          <p>If you don't find an answer here, be sure to <a class="scrollto" href="#footer">contact us</a> - we're
-            happy to help!</p>
-        </header>
-
-        <ul id="faq-list">
-          <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">What is emotional health? <i
-                class="ion-android-remove"></i></a>
-            <div id="faq1" class="collapse" data-parent="#faq-list">
-              <p>
-                Emotional health is a measure of how well you are doing within your own head.
-              </p>
+    <!--::FAQ start::-->
+    <section class="accordion_part padding_top" id="FAQ">
+            <img src="img/animate_icon/Ellipse_7.png" alt="" class="feature_icon_1 custom-animation4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_tittle text-center">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>If there's no answer here, be sure to <a href="blog.html">contact us</a></p>
+                    </div>
+                </div>
             </div>
-          </li>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        What exactly is "transparent" mood tracking?
+                                    </button>
+                                </h5>
+                            </div>
 
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">How can you measure emotions? <i
-                class="ion-android-remove"></i></a>
-            <div id="faq2" class="collapse" data-parent="#faq-list">
-              <p>
-                We give you a single, emotion-related topic, like fulfillment, and give you 4 options to choose that describe how fulfilled you are. We can't quantify emotions themselves, but we can show how severely you are feeling a certain thing.
-              </p>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Transparent mood tracking takes the concept of mood tracking, which is inherently very private and self-focused, and opens up how the user is feeling to those close to them.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What kind of insights does Internal provide?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Internal provides both quantitative and qualitative insights on you and your co-founder's emotional well-being. Here are some examples...<br>Quantitative: "@Ian Scalzo is feeling 78% today"<br>Qualitative: "@Ian Scalzo wasn't feeling too well this week in regards to work distribution"
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How do I cancel my subscription?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Send us an email and we'll cancel your subscription within 12 hours. <br> <a href="“mailto:support@getinternal.co?subject=Subscription%20Cancellation&body=Hello%20Internal%20Team%2C%0A%0AI%20regret%20to%20inform%20you%20that%20my%20team%20and%20I%20do%20not%20wish%20to%20continue%20being%20a%20subscriber%20to%20the%20Internal%20Slack%20application%20and%20request%20to%20terminate%20our%20subscription.%0A%0ATeam%20Name%3A%0AYour%20Name%3A%0A%0AThank%20you”">Cancel My Subscription</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                                <div class="card-header" id="heading_4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                            Do you collect my data?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse_4" class="collapse" aria-labelledby="heading_4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        We do, indeed, collect the necessary data to compute scores and things of that nature. For more information, feel free to take a glace at our Privacy Policy for a detailed account of data collection. <br> <a href="privacy.html">Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
-          </li>
+        </div>
+        <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_6 custom-animation6">
+    </section>
+    <!--::FAQ end::-->
 
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">How do I cancel my subscription? <i
-                class="ion-android-remove"></i></a>
-            <div id="faq3" class="collapse" data-parent="#faq-list">
-              <p>
-                Send us an email and we'll cancel your subscription within 12 hours. <a
-                  href=“mailto:support@getinternal.co?subject=Subscription%20Cancellation&body=Hello%20Internal%20Team%2C%0A%0AI%20regret%20to%20inform%20you%20that%20my%20team%20and%20I%20do%20not%20wish%20to%20continue%20being%20a%20subscriber%20to%20the%20Internal%20Slack%20application%20and%20request%20to%20terminate%20our%20subscription.%0A%0ATeam%20Name%3A%0AYour%20Name%3A%0A%0AThank%20you”>support@getinternal.co</a>
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Do you collect my data? <i
-                class="ion-android-remove"></i></a>
-            <div id="faq4" class="collapse" data-parent="#faq-list">
-              <p>
-                We do, indeed, collect the necessary data to compute scores and things of that nature. For more
-                information, feel free to take a glace at our Privacy Policy for a detailed account of data collection. <a href="/privacy">Privacy Policy</a>
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Can anyone see what answers I choose? <i
-                class="ion-android-remove"></i></a>
-            <div id="faq5" class="collapse" data-parent="#faq-list">
-              <p>
-                Nope! Only you have the ability to see what options you chose on your personal reports.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">What are the insights Internal provides?<i
-                class="ion-android-remove"></i></a>
-            <div id="faq6" class="collapse" data-parent="#faq-list">
-              <p>
-                Internal packages up your own or a team's aggregate responses to daily check ups and sends the results in an easily consumable Slack message on a daily, weekly, or monthly basis.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- #faq -->
-
-  </main>
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer" class="section-bg">
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6">
-
+    <!--::footer_part start::-->
+    <footer class="footer_part">
+        <div class="container">
             <div class="row">
-
-              <div class="col-sm-6">
-
-                <div class="footer-info">
-                  <img src="public/images/small_logo.png" alt="" class="img-fluid">
-                  <p>Internal helps people be more empathetic. We help teams build a culture of transparency and
-                    acceptance.</p>
+                <div class="col-sm-8 col-md-4 col-lg-4">
+                    <div class="single_footer_part">
+                        <a href="/" class="footer_logo_iner"> <img src="img/footer_logo.png" alt="#"> </a>
+                        <p>Internal builds bridges between humans by catalyzing and mediating difficult emotional conversations for important relationships.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="footer-newsletter">
-                  <h4>Newsletter</h4>
-                  <p>Subscribe to our newsletter for updates and product beta testing. </p>
-                  <form action="/newsletter-success" name="Newsletter" method="POST" data-netlify="true">
-                    <input type="email" name="email" placeholder="Email"><input type="submit" value="Submit">
-                  </form>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="single_footer_part">
+                        <h4>Home</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#FAQ">FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-              </div>
-
-              <div class="col-sm-6">
-                <div class="footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                  </ul>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="single_footer_part">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="/manifesto">Manifesto</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Terms of Service</a></li>
+                            <li><a href="/data-processing">Data Processing Addendum</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="footer-links">
-                  <h4>Contact Us</h4>
-                  <p>
-                    3455 Midvale Ave <br>
-                    Philadelphia, PA 19129<br>
-                    United States <br>
-                    <strong>Phone:</strong> +1 (610) 597-5353<br>
-                    <strong>Email:</strong> support@getinternal.co<br>
-                  </p>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="single_footer_part">
+                        <h4>A Note to You</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="">You are whole independent of your work. You are on the right path. We love you whether you're a customer or not.</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="social-links">
-                  <a href="https://twitter.com/InternalHQ" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="https://www.facebook.com/InternalHQ/" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.linkedin.com/company/internal-psych" class="linkedin"><i
-                      class="fa fa-linkedin"></i></a>
-                </div>
-
-              </div>
-
             </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="form">
-
-              <h4>Send us a message</h4>
-              <p>Contact us with your feedback and questions - We respond within 24 hours!</p>
-              <form action="/form-submitted" name="contact" method="POST" data-netlify="true" role="form"
-                class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="copyright_text">
+                        <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright Internal Inc. &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <a href="https://colorlib.com" target="_blank"><i class="ti-heart" aria-hidden="true"></i></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
+                <div class="col-lg-4">
+                    <div class="footer_icon social_icon">
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/InternalHQ" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-              </form>
             </div>
-
-          </div>
-
-
-
         </div>
+    </footer>
+    <!--::footer_part end::-->
 
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Internal Inc</strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- #footer -->
-
-  <a href="#header" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <a href="#header" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
-
-  <!-- JavaScript Libraries -->
-  <script src="public/lib/jquery/jquery.min.js"></script>
-  <script src="public/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="public/lib/easing/easing.min.js"></script>
-  <script src="public/lib/mobile-nav/mobile-nav.js"></script>
-  <script src="public/lib/wow/wow.min.js"></script>
-  <script src="public/lib/waypoints/waypoints.min.js"></script>
-  <script src="public/lib/counterup/counterup.min.js"></script>
-  <script src="public/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="public/lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="public/lib/lightbox/js/lightbox.min.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="public/javascripts/main.js"></script>
-
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
