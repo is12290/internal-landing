@@ -2358,7 +2358,7 @@ ul {
 .main_menu .menu_btn:hover {
   background-color: #ff4800;
   border: 1px solid #ff4800;
-  color: #fff;
+  color: #ff4800;
 }
 
 /* line 74, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
@@ -2536,7 +2536,7 @@ ul {
 /* line 249, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .dropdown-menu {
   border: 0px solid rgba(0, 0, 0, 0.15) !important;
-  background-color: #fafafa;
+  background-color: #3F34B1;
 }
 
 /* line 255, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
