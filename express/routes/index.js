@@ -34,7 +34,7 @@ router.get('/newsletter-success', function(req, res, next) {
   res.render('newsletter-form', { page: 'newsletter-form', menuId: 'newsletter-form' });
 });
 
-router.get('/manifesto', function(req, res, next) {
+router.get('/blog/blog/manifesto', function(req, res, next) {
   res.render('manifesto', { page: 'manifesto', menuId: 'manifesto' });
 });
 
