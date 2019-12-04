@@ -34,6 +34,10 @@ router.get('/newsletter-success', function(req, res, next) {
   res.render('newsletter-form', { page: 'newsletter-form', menuId: 'newsletter-form' });
 });
 
+router.get('/pricing', function(req, res, next) {
+  res.render('pricing', { page: 'pricing', menuId: 'pricing' });
+});
+
 router.get('/blog/blog/manifesto', function(req, res, next) {
   res.render('manifesto', { page: 'manifesto', menuId: 'manifesto' });
 });

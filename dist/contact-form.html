@@ -51,7 +51,7 @@
                                     <a class="nav-link" href="/#features">About</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="/#pricing">Pricing</a>
+                                        <a class="nav-link" href="/pricing">Pricing</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/blog/manifesto">Mission</a>
@@ -64,7 +64,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="checkout-button-plan_G7KaefuVLj9kqG" id="checkout-button-plan_G7KaefuVLj9kqG" class="d-none d-sm-block btn_1 home_page_btn">Install</a>
+                        <a href="/pricing" class="d-none d-sm-block btn_1 home_page_btn">Install</a>
                     </nav>
                 </div>
             </div>
@@ -103,37 +103,6 @@
     </section>
     <!--::Banner start::-->
 
-    <script>
-        (function() {
-          var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
-        
-          var checkoutButton = document.getElementById('checkout-button-plan_G7KaefuVLj9kqG');
-          checkoutButton.addEventListener('click', function () {
-            // When the customer clicks on the button, redirect
-            // them to Checkout.
-            stripe.redirectToCheckout({
-              items: [{plan: 'plan_G7KaefuVLj9kqG', quantity: 1}],
-        
-              // Do not rely on the redirect to the successUrl for fulfilling
-              // purchases, customers may not always reach the success_url after
-              // a successful payment.
-              // Instead use one of the strategies described in
-              // https://stripe.com/docs/payments/checkout/fulfillment
-              successUrl: 'https://getinternal.co/success',
-              cancelUrl: 'https://getinternal.co/error',
-            })
-            .then(function (result) {
-              if (result.error) {
-                // If `redirectToCheckout` fails due to a browser or network
-                // error, display the localized error message to your customer.
-                var displayError = document.getElementById('error-message');
-                displayError.textContent = result.error.message;
-              }
-            });
-          });
-        })();
-        </script>
-
     <!--::footer_part start::-->
     <footer class="footer_part">
         <div class="container">
@@ -151,7 +120,7 @@
                         <ul class="list-unstyled">
                             <li><a href="/#features">Features</a></li>
                             <li><a href="/#benefits">Benefits</a></li>
-                            <li><a href="/#pricing">Pricing</a></li>
+                            <li><a href="/pricing">Pricing</a></li>
                             <li><a href="/#about">About</a></li>
                             <li><a href="/#FAQ">FAQ</a></li>
                         </ul>

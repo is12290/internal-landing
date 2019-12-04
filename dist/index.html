@@ -29,8 +29,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Stripe -->
-    <script src="https://js.stripe.com/v3"></script>
 </head>
 
 <body>
@@ -54,7 +52,7 @@
                                     <a class="nav-link" href="#features">About</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="#pricing">Pricing</a>
+                                        <a class="nav-link" href="/pricing">Pricing</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/blog/manifesto">Mission</a>
@@ -67,7 +65,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a id="checkout-button-plan_G7KaefuVLj9kqG" class="d-none d-sm-block btn_1 home_page_btn">Install</a>
+                        <a href="/pricing" class="d-none d-sm-block btn_1 home_page_btn">Install</a>
                     </nav>
                 </div>
             </div>
@@ -194,8 +192,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_tittle text-center">
-                        <h2>Simple Pricing</h2>
-                        <p>One Plan. One Flat Rate. Regardless of Team Size.</p>
+                        <h2>One App...</h2>
+                        <p>is all you need.</p>
                     </div>
                 </div>
             </div>
@@ -203,15 +201,15 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
                         <img src="img/pricing_icon_4.png" alt="">
-                        <p>Slack App</p>
-                        <h3>$20.00 <span>/ month</span></h3>
+                        <p>Bot</p>
+                        <h3>Slack App</h3>
                         <ul>
-                            <li>Personal Perception Testing</li>
-                            <li>Coworker Perception Testing</li>
-                            <li>Perception Insights</li>
+                            <li>Perception Testing</li>
+                            <li>Perception Misalignment Reports</li>
+                            <li>Consensus Personality Insights</li>
                             <li>Relationship Change Tracker</li>
                         </ul>
-                        <a id="checkout-button-plan_G7KaefuVLj9kqG" class="pricing_btn">Install</a>
+                        <a href="/pricing" class="pricing_btn">Install</a>
                     </div>
                 </div>
             </div>
@@ -219,37 +217,6 @@
         <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_2 custom-animation1">
     </section>
     <!--::Pricing end::-->
-
-    <script>
-        (function() {
-          var stripe = Stripe('pk_live_4d22VYoeGPBPORP1weTy3eI400LohIwbpV');
-        
-          var checkoutButton = document.getElementById('checkout-button-plan_G7KaefuVLj9kqG');
-          checkoutButton.addEventListener('click', function () {
-            // When the customer clicks on the button, redirect
-            // them to Checkout.
-            stripe.redirectToCheckout({
-              items: [{plan: 'plan_G7KaefuVLj9kqG', quantity: 1}],
-        
-              // Do not rely on the redirect to the successUrl for fulfilling
-              // purchases, customers may not always reach the success_url after
-              // a successful payment.
-              // Instead use one of the strategies described in
-              // https://stripe.com/docs/payments/checkout/fulfillment
-              successUrl: 'https://getinternal.co/success',
-              cancelUrl: 'https://getinternal.co/error',
-            })
-            .then(function (result) {
-              if (result.error) {
-                // If `redirectToCheckout` fails due to a browser or network
-                // error, display the localized error message to your customer.
-                var displayError = document.getElementById('error-message');
-                displayError.textContent = result.error.message;
-              }
-            });
-          });
-        })();
-        </script>
 
     <!--::About Us start::-->
     <section class="review_part padding_top" id="about">
@@ -411,7 +378,7 @@
                         <ul class="list-unstyled">
                             <li><a href="#features">Features</a></li>
                             <li><a href="#benefits">Benefits</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="/pricing">Pricing</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#FAQ">FAQ</a></li>
                         </ul>
